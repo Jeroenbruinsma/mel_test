@@ -19,6 +19,7 @@ router.get("/products", async (request, response) => {
     response.json({ product, total });
   } catch (error) {
     console.log(error);
+    response.send("error by jeroen ")
   }
 
   // Product.findAll({limit, offset, include: [Category, ProductImage] })
